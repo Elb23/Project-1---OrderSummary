@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    Font-size: 16px;
+  }
+
+  .container {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-wrap:wrap; 
+    object-fit: contain;
+
+
+  }
+
+
+
+  .image1 {
+    flex:3;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-image: url(ims/abc.svg);
+    margin-top:3%;
+ }
+
+  .image2 {
+    flex:2;
+    background-image: url(ims/hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat ;
+}
+
+.items {
+    margin-right: 27%;
+    margin-left: 15%;
+    margin-bottom: 5px;    
+
+}
+
+#h1a{
+    margin-top: 15vh;
+    color:hsl(0, 36%, 70%);
+
+}
+#h1a,#h1b,#h1c{
+
+    letter-spacing: 0.5em;
+    Font-size: 320%;
+    font-weight: 600;       
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+}
+#h1b{
+    margin-top:5px;
+
+}
+#h1c{
+    margin-top:5px;
+}
+
+.search-container{
+    
+    background-color:transparent;
+    width: 52%;
+    max-height: 100vh;
+    padding: 5%;
+    background-size: cover; 
+    display: flex;
+    margin-left:10%;
+    margin-top:-3%;
+    
+
+}
+
+#p1{
+    line-height: 2;
+
+    Font-size: 16px;
+    color:hsl(0, 36%, 70%);
+}
+.search-bar{
+        position:relative;
+        width: 100%;
+        max-width: 600px;
+        background: transparent;
+        display:flex;
+        border-width: thick ;
+        border-radius: 60px;
+        min-height: 50px;
+      
+    }
+
+    .search-bar input{
+
+        background: transparent;
+        flex:6;
+        border:0;
+        min-height: 50px;
+        min-width: 70px;
+        border: 1px solid hsl(0, 36%, 70%);
+        border-radius: 60px;
+        text-indent: 20px;
+    }
+    ::placeholder { 
+        color: hsl(0, 36%, 70%);
+        opacity: 1; 
+      }
+    input:focus {
+        outline: none;
+      }
+    .search-bar button{
+        position:absolute;
+        background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        top: 50%;
+        right: 0;
+        border-radius: 60px;
+        min-height: 52px;
+        min-width: 100px;
+        transform: translateY(-50%);
+        z-index: 1;
+        border:none;
+        color:white;
+        font-size:30px;
+    }
+
+    .search-bar button:active {
+        background-image: linear-gradient(to left, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+      }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .items {
+        
+    }
+    .image2{}
+}
