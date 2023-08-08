@@ -1,0 +1,154 @@
+* {
+    padding:0;
+    margin:0;
+    border: 0px;
+}
+body{
+    margin: 0px ;
+    padding: 0px ;
+    border: 0px;
+    background-color: hsl(234, 29%, 20%) ;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+
+}
+.wcontainer {
+    background-color: #ffffff;
+    margin: 50px 50px 50px 50px;
+    width:900px;
+    height: auto;
+    display: flex;    
+    border-radius:30px;
+    overflow: hidden;
+}
+
+.txtcontainer{
+    margin: 20px 0 40px 30px;;
+    padding: 30px;
+    width:100%;
+    overflow: hidden;
+    line-height: 1.5;
+    
+}
+.txtcontainer p{
+    margin-bottom: 20px;
+}
+.wcontainer img{
+     height:auto;
+     width:95%;
+     margin:20px 20px 20px 0;
+     border-radius:20px;
+     overflow: hidden;
+} 
+h1 {
+    font-size: 50px;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 10px;
+    margin-top:30px;
+}
+h5{
+    color:  hsl(234, 29%, 20%) ;
+    margin-top: 20px;
+
+}
+input{
+    border-radius: 10px;
+    width:84%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border:2px solid hsl(231, 7%, 60%);
+    padding:15px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: hsl(234, 29%, 20%) ;
+    color: White;
+    font-weight:bold;
+    height:50px;
+    width:92%;
+    border-color:0px;
+}
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+}
+#icon1,#icon2,#icon3{
+    margin-bottom:-4px;
+}
+#p1,#p2 {
+    display:inline-block;
+}
+#p3 {
+    margin-left:10px;
+}
+.txtcontainer p{
+    margin-bottom:-30px
+}
+
+
+@media(max-width:747px){
+    body {
+        padding:0;
+        margin:0;
+        font-size: 45px;
+        background-color: white;
+   }
+
+ .wcontainer{
+    display:grid;
+    height: 100%;
+    margin:0;
+    border-radius: 0;
+    row-gap: 10px;
+ }
+    .txtcontainer{
+        order :2;
+        height:100%;
+        width:100%;
+        padding:8px;
+    }
+
+h1 {
+    font-size:80px;
+    margin-bottom:50px;
+}
+
+h5{
+    margin-top:60px;
+}
+    
+.wcontainer img{
+    order:1;
+    width:100%;
+    height:100%;
+    margin:0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+}
+#icon1,#icon2,#icon3{
+  height: 60px;
+  width:60px;
+  margin-bottom:-12px;
+}
+
+input{
+    height:100px;
+    width:86%;
+    margin-bottom: 50px;
+}
+button{
+    height:130px;
+    width:90%;
+    font-size:35px
+}
+input::placeholder{
+    font-size:40px;
+    padding:25px;
+}
+
+#p1,#p2 {
+    text-indent:74px; 
+    padding-left: 20px; 
+    margin-bottom: -100px;
+}
